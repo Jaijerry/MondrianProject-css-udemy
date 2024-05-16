@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template: 414px 325px / 320px 419px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .co1 {
+      display: grid;
+      grid-template: 296px 20px / 320px;
+      gap: 9px;
+    }
+
+    .co2 {
+      display: grid;
+      grid-template: 325px / 360px 50px;
+      gap: 9px;
+    }
+
+    .flex1 {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 19px;
+    }
+
+    .flex1 .blue {
+      flex-basis: 130px;
+      background-color: #004592;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .flex .flex2 {
+      flex-basis: 20px;
+    }
+
+    .flex2 {
+      display: flex;
+      gap: 9px;
+    }
+
+    .yellow {
+      background-color: #f9d01e;
+      flex-basis: 198px;
+    }
+
+    .black {
+      background-color: #232629;
+      flex-basis: 153px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .grey {
+      background-color: #f0f1ec;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="grey"></div>
+    <div class="co1">
+      <div class="grey"></div>
+      <div class="grey"></div>
+    </div>
+    <div class="co2">
+      <div class="flex">
+        <div class="grey"></div>
+        <div class="flex2">
+          <div class="yellow"></div>
+          <div class="black"></div>
+        </div>
+      </div>
+      <div class="flex1">
+        <div class="blue"></div>
+        <div class="grey"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
